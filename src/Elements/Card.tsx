@@ -15,8 +15,8 @@ const Card = ({ text, name, position, src, id }: CardProps) => {
   const { activeId } = useIdStore((s) => s);
 
   return (
-    <div
-      className="flex justify-center items-center absolute transition-opacity"
+    <section
+      className="flex justify-center items-center absolute transition-opacity lg:flex-col-reverse lg:items-center lg:justify-start lg:my-[54px] w-full"
       style={
         activeId !== id ? { opacity: 0, zIndex: 0 } : { opacity: 1, zIndex: 10 }
       }
@@ -26,7 +26,7 @@ const Card = ({ text, name, position, src, id }: CardProps) => {
         <Img src={src} />
         <Changer />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,9 +3,9 @@ import Card from "./Elements/Card";
 
 const App = () => {
   return (
-    <main>
+    <main className="h-max lg:overflow-x-hidden">
       <BG />
-      <div className="flex h-screen w-screen justify-center items-center relative z-10">
+      <div className="flex min-h-screen w-screen justify-center items-center relative z-10 lg:justify-start lg:items-start">
         <Card
           text="“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”"
           name="Tanya Sinclair"

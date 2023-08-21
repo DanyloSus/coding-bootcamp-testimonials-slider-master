@@ -7,6 +7,9 @@ export default {
         "dark-blue": "hsl(240, 38%, 20%)",
         "grayish-blue": "hsl(240, 18%, 77%)",
       },
+      screens: {
+        lg: { max: "1024px" },
+      },
     },
   },
   plugins: [],
